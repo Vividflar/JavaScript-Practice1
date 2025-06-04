@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1 id="heading" onclick="innerHTML='Is Awesome'">JavaScript</h1>
+        <p id="addition"></p>
+
+        <script>
+            document.getElementById("addition").innerHTML = addNumbers(50, 19);
+
+            function changeText(){
+                if(document.getElementById("heading").innerHTML=='JavasSript'){
+                    document.getElementById("heading").innerHTML='Is Awesome'
+                } else {
+                    document.getElementById("addition").innerHTML ='JavaScript';
+                }
+            }
+
+            function addNumbers(num1, num2){
+                return num1 + num2;
+            }
+
+        </script>
+    </body>
+</html>
